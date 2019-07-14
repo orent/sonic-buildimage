@@ -223,6 +223,16 @@ RUN apt-get update && apt-get install -y \
         cmake \
 # For pam_tacplus build
         autoconf-archive \
+# For iproute2
+        cm-super-minimal \
+        libatm1-dev \
+        libelf-dev \
+        libmnl-dev \
+        libselinux1-dev \
+        linuxdoc-tools \
+        lynx \
+        texlive-latex-extra \
+        texlive-latex-recommended \
 # For python-click build
         python-sphinx \
         python-docutils \
@@ -233,6 +243,8 @@ RUN apt-get update && apt-get install -y \
         python3-requests \
         python3-pytest \
         python3-colorama \
+# For bash
+        texi2html \
 # For initramfs
         bash-completion \
 # For sonic vs image build
